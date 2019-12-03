@@ -13,7 +13,7 @@ RUN /opt/miniconda3/bin/conda config --add channels https://mirrors.tuna.tsinghu
 RUN mkdir /home/fba/
 WORKDIR /home/fba
 COPY enzyme_python.yml ./enzyme_python.yml
-RUN /opt/miniconda3/bin/conda env create –file enzyme_python.yml
+RUN /opt/miniconda3/bin/conda env create --file enzyme_python.yml
 COPY cplex_studio128.linux-x86-64.bin ./cplex_studio128.linux-x86-64.bin
 RUN ./cplex_studio128.linux-x86-64.bin
 RUN vim  ~/.bashrc
