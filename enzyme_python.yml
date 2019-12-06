@@ -31,7 +31,6 @@ dependencies:
     - bleach==3.1.0
     - blessings==1.7
     - cameo==0.11.15
-    - certifi==2017.7.27.1
     - click==7.0
     - cobra==0.13.3
     - cplex==12.8.0.0
